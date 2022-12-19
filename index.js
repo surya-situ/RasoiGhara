@@ -1,3 +1,4 @@
+// sliding cars for home screen
 const productContainers= [...document.querySelectorAll('.pop-card')];
 const nextBtn = [...document.querySelectorAll('.forward')];
 const prevBtn = [...document.querySelectorAll('.previous')];

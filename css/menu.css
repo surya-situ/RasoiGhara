@@ -1,0 +1,42 @@
+/* ----------------------------- */
+/* ---------MENU HEADER--------- */
+/* ----------------------------- */
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  height: 25rem;
+  border-bottom: 1px solid yellow;
+}
+
+.menu-header-name {
+  font-family: inherit;
+  color: #1e2051;
+  font-size: 3.6rem;
+}
+
+.menu-header-title {
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.menu-header-btn {
+  display: flex;
+  justify-content: space-between;
+  background-color:  #ffcb00;
+  color: black;
+}
+
+.menu-btn-link:link,
+.menu-btn-link:visited {
+  text-decoration: none;
+  /* border: none; */
+  color: #1e2051;
+}
+
+.menu-btn-link:hover,
+.menu-btn-link:active {
+  color: #1e2051;
+  text-decoration: none;
+}
