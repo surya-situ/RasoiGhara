@@ -459,3 +459,42 @@
   backdrop-filter: blur(3px);
   z-index: 5;
 }
+
+.modal-img {
+  width: 60%;
+}
+
+.modal-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-heading {
+  padding-bottom: 1.8rem;
+  font-size: 1.2rem;
+}
+.modal-heading-num {
+  font-family: inherit;
+  font-size: 7.4rem;
+  font-weight: bold;
+  color: #1e2051;
+}
+
+.modal-description {
+  font-family: inherit;
+  font-size: 2rem;
+  padding-bottom: 1.8rem;
+  color: #1e2051;
+}
+
+.modal-description-2 {
+  font-size: 1.2rem;
+  color: #6f6f6f ;
+  font-weight: 100;
+  padding-bottom: 1.2rem;
+  color: #1e2051;
+}
+
+.btn-modal{
+  background-color: #ffcb00;
+}
