@@ -82,11 +82,11 @@ const items = [
     },
     {
         id: '10',
-        title: 'Butter panner',
+        title: 'Butter paneer',
         price: 120,
         img: './imgs/veg/butter-paneer.jpg',
         category: 'veg',
-        description: 'Delicious authentic indian spicy butter panner recipe with lots of butter.',
+        description: 'Delicious authentic indian spicy butter paneer recipe with lots of butter.',
         stars: 4.5
     },
     {
@@ -118,7 +118,7 @@ const items = [
     },
     {
         id: '14',
-        title: 'Palag panner',
+        title: 'Palag paneer',
         price: 140,
         img: './imgs/veg/palag-paneer.jpg',
         category: 'veg',
@@ -127,7 +127,7 @@ const items = [
     },
     {
         id: '15',
-        title: 'Panner hydrabadi',
+        title: 'paneer hydrabadi',
         price: 170,
         img: './imgs/veg/paneer-hydrabadi.jpg',
         category: 'veg',
@@ -136,7 +136,7 @@ const items = [
     },
     {
         id: '16',
-        title: 'Masala panner',
+        title: 'Masala paneer',
         price: 150,
         img: './imgs/veg/paneer-masala.jpg',
         category: 'nonveg',
@@ -145,7 +145,7 @@ const items = [
     },
     {
         id: '17',
-        title: 'Panner fried rice',
+        title: 'paneer fried rice',
         price: 160,
         img: './imgs/veg/paneer-rice.jpg',
         category: 'veg',
@@ -154,7 +154,7 @@ const items = [
     },
     {
         id: '18',
-        title: 'Tandoor panner',
+        title: 'Tandoor paneer',
         price: 120,
         img: './imgs/veg/paneer-tandoor.jpg',
         category: 'veg',
@@ -271,11 +271,19 @@ const items = [
     }
 ];
 
-
+// selecting the elements for menu section
+const menuBtnSelector = document.querySelector('.menu-header-btn')
 const sectionMenu = document.querySelector('.section-menu');
 
-window.addEventListener('DOMContentLoaded', function () {
-    let displayMenu = items.map(function (item) {
+window.addEventListener('DOMContentLoaded', ()=> {
+    // callback function
+    displayMenuitems(items);
+})
+
+// showing all items:
+function displayMenuitems (menuitems) {
+    let displayMenu = menuitems.map(function (item) {
+        
         
         return `
             <article class="meal">
@@ -300,13 +308,54 @@ window.addEventListener('DOMContentLoaded', function () {
         `
     })
 
-    displayMenu = displayMenu.join('')
-    // console.log(displayMenu);
+    displayMenu= displayMenu.join('')
+
     sectionMenu.innerHTML = displayMenu;
-})
+};
+
+// selecting items as per buttons
+function displayBtnSelection () {
+    const categories = items.reduce(
+        function(value, item){
+            if(!value.includes(item.category)){
+                value.push(item.category)
+            }
+            return value;
+        }
+        ['all']
+    );
+
+    const categoryBtn = categories.map(
+        function(category) {
+            return `<a class="menu-btn-link" data-id=${category}>${category}</a>`
+        }
+    ).join('');
+
+    menuBtnSelector.innerHTML = categoryBtn;
+    const filterBtn = menuBtnSelector.querySelectorAll('.menu-btn-link');
+
+    filterBtn.forEach(function(btn) {
+        btn.addEventListener('click', function(event) {
+            const category = event.currentTarget.dataset.id;
+
+            const menuCategory = items.filter(function(menuItem) {
+
+                if(menuItem.category === category) {
+                    return menuItem;
+                }
+            });
+            if(category === "all"){
+                menuBtnSelector(items);
+            } else {
+                menuBtnSelector(menuCategory)
+            }
+        })
+    })
+    
+}
 
 
-// sliding cars for home screen
+// ********** sliding cards for home screen **********
 const productContainers= [...document.querySelectorAll('.pop-card')];
 const nextBtn = [...document.querySelectorAll('.forward')];
 const prevBtn = [...document.querySelectorAll('.previous')];
@@ -323,9 +372,11 @@ productContainers.forEach((item, i) => {
         item.scrollLeft -= containerWidth
     })
 })
+// ********** sliding cards for home screen ends**********
 
 
-// Modal
+
+// *************** Modal ***************
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.close-modal');
@@ -340,5 +391,6 @@ setTimeout(() => {
 }, 3000); 
 
 btnCloseModal.addEventListener('click', closeModal)
+// *************** Modal ends ***************
 
 
