@@ -19,7 +19,7 @@ const items = [
     },
     {
         id: '3',
-        title: 'Chicken dum biryani',
+        title: 'Chicken biryani',
         price: 220,
         img: './imgs/nonveg/chicken-biryani.jpg',
         category: 'nonveg',
@@ -139,7 +139,7 @@ const items = [
         title: 'Masala paneer',
         price: 150,
         img: './imgs/veg/paneer-masala.jpg',
-        category: 'nonveg',
+        category: 'veg',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 4
     },
@@ -184,7 +184,7 @@ const items = [
         title: 'Ice-cream brownie',
         price: 80,
         img: './imgs/snacks/brownie-ice-cream.jpg',
-        category: 'snacks',
+        category: 'starter',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -193,7 +193,7 @@ const items = [
         title: 'burger $ fries',
         price: 120,
         img: './imgs/snacks/burger-fries.jpg',
-        category: 'nonveg',
+        category: 'starter',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -201,8 +201,8 @@ const items = [
         id: '23',
         title: 'Chicken burger',
         price: 110,
-        img: './imgs/nonveg/egg-curry.jpg',
-        category: 'nonveg',
+        img: './imgs/nonveg/chicken-burger.jpg',
+        category: 'starter',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 4
     },
@@ -211,7 +211,7 @@ const items = [
         title: 'Chicken pakoda',
         price: 120,
         img: './imgs/snacks/chicken-pakoda.jpg',
-        category: 'nonveg',
+        category: 'starter',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -220,7 +220,7 @@ const items = [
         title: 'Veg momos',
         price: 70,
         img: './imgs/snacks/veg-momo.jpg',
-        category: 'nonveg',
+        category: 'breakfast',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -229,7 +229,7 @@ const items = [
         title: 'Idli bara',
         price: 30,
         img: './imgs/indian-breakfast/bara.jpg',
-        category: 'nonveg',
+        category: 'breakfast',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -238,7 +238,7 @@ const items = [
         title: 'Chilla',
         price: 10,
         img: './imgs/indian-breakfast/chilla.jpg',
-        category: 'nonveg',
+        category: 'breakfast',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -247,7 +247,7 @@ const items = [
         title: 'Dosa',
         price: 40,
         img: './imgs/indian-breakfast/dosa.jpg',
-        category: 'nonveg',
+        category: 'breakfast',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -256,7 +256,7 @@ const items = [
         title: 'Pakodi',
         price: 20,
         img: './imgs/indian-breakfast/pakadi.jpg',
-        category: 'nonveg',
+        category: 'breakfast',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -265,22 +265,46 @@ const items = [
         title: 'Piaji',
         price: 20,
         img: './imgs/indian-breakfast/piaji.jpg',
-        category: 'nonveg',
+        category: 'breakfast',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 4
     }
 ];
 
-// selecting the elements for menu section
-const menuBtnSelector = document.querySelector('.menu-header-btn')
+// selecting the elements for menu btn section
+const menuBtnSelector = document.querySelectorAll('.menu-btn-link')
+// selecting the menu section
 const sectionMenu = document.querySelector('.section-menu');
 
 window.addEventListener('DOMContentLoaded', ()=> {
     // callback function
     displayMenuitems(items);
-})
+});
 
-// showing all items:
+// ********** filtering items: **********
+menuBtnSelector.forEach( function(btn) {
+    btn.addEventListener('click', function(e){
+        // targeting the id in the menu html button to get the id 
+        const category = e.currentTarget.dataset.id;
+
+        // filtering the items as per the category
+        const menuCategory = items.filter(function(menuItem) {
+            if(menuItem.category === category){
+                return menuItem;
+            }
+        });
+
+        // displaying items
+        if(category === 'all') {
+            displayMenuitems(items);
+        } else {
+            displayMenuitems(menuCategory);
+        }
+    });
+});
+// ********** filtering items: (ends)**********
+
+// *********** showing all items: **********
 function displayMenuitems (menuitems) {
     let displayMenu = menuitems.map(function (item) {
         
@@ -304,6 +328,7 @@ function displayMenuitems (menuitems) {
                     ${item.description}
                 </p>
                 </div>
+                
             </article>
         `
     })
@@ -312,47 +337,7 @@ function displayMenuitems (menuitems) {
 
     sectionMenu.innerHTML = displayMenu;
 };
-
-// selecting items as per buttons
-function displayBtnSelection () {
-    const categories = items.reduce(
-        function(value, item){
-            if(!value.includes(item.category)){
-                value.push(item.category)
-            }
-            return value;
-        }
-        ['all']
-    );
-
-    const categoryBtn = categories.map(
-        function(category) {
-            return `<a class="menu-btn-link" data-id=${category}>${category}</a>`
-        }
-    ).join('');
-
-    menuBtnSelector.innerHTML = categoryBtn;
-    const filterBtn = menuBtnSelector.querySelectorAll('.menu-btn-link');
-
-    filterBtn.forEach(function(btn) {
-        btn.addEventListener('click', function(event) {
-            const category = event.currentTarget.dataset.id;
-
-            const menuCategory = items.filter(function(menuItem) {
-
-                if(menuItem.category === category) {
-                    return menuItem;
-                }
-            });
-            if(category === "all"){
-                menuBtnSelector(items);
-            } else {
-                menuBtnSelector(menuCategory)
-            }
-        })
-    })
-    
-}
+// *********** showing all items: (ends)**********
 
 
 // ********** sliding cards for home screen **********
@@ -385,6 +370,7 @@ let closeModal = () => {
     modal.classList.add('hidden')
     overlay.classList.add('hidden')
 };
+
 setTimeout(() => {
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden')
