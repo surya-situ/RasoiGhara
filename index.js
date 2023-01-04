@@ -328,7 +328,7 @@ function displayMenuitems (menuitems) {
                     ${item.description}
                 </p>
                 </div>
-                
+                <a href="" class="main-nav-link nav-order">Add to cart</a>
             </article>
         `
     })
