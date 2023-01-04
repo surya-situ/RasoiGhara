@@ -312,17 +312,17 @@
   scroll-behavior: smooth;
 
   padding: 4.8rem 0 4.8rem 0; 
-  gap: 5.1rem;
+  gap: 5rem;
 }
 
 .meal {
-  width: 100%;
+  width: 90%;
   /* border: 2px solid red; */
 
   flex: 0 0 350px;
   margin: 10px;
   /* border: 1px solid #ccc; */
-  /* box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3); */
+  box-shadow: 2px 2px 6px 0px  rgba(167, 159, 159, 0.3);
 
 }
 
