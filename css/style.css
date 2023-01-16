@@ -30,30 +30,31 @@
   display: flex;
   align-items: center;
   gap: 5.2rem;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.6rem;
+  color: #1e2051;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
   color: #2a2b43;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #2a2b43;
-  transform: scale(1.1);
+  color: #817d7d;
+
 }
 
 .main-nav-link.nav-order:link,
 .main-nav-link.nav-order:visited {
   padding: 1.2rem 2.4rem;
-  /* border-radius: 9px; */
+  border-radius: 5px;
   color: #2a2b43;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.6rem;
   background-color: #ffcb00;
 }
@@ -313,6 +314,7 @@
 
   padding: 4.8rem 0 4.8rem 0; 
   gap: 5rem;
+  position: relative;
 }
 
 .meal {
@@ -365,6 +367,23 @@
   color: #1a1a1a75;
   line-height: 1.5;
   padding-top: 1.2rem;
+}
+
+.menu-order-btn {
+  padding: 10px 15px;
+
+  background-color: #ffcb00;
+  border: none;
+  font-family: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: .8rem;
+  margin-right: .8rem;
+  border-radius: 5px;
+}
+
+.menu-order-btn:hover {
+  background-color: #ffc800a5;
 }
 
 /* ----------------------------- */
@@ -445,7 +464,7 @@
   background-color: white;
   padding: 6rem;
   border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3rem 5rem rgba(3, 9, 38, 0.816);
   z-index: 10;
 }
 
@@ -455,7 +474,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(3, 9, 38, 0.816);
   backdrop-filter: blur(3px);
   z-index: 5;
 }
@@ -497,4 +516,33 @@
 
 .btn-modal{
   background-color: #ffcb00;
+}
+
+/* --------- */
+.order-offer-section {
+  margin: 4.8rem 0 4.8rem 0;
+  background-color: #fbfafa;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.order-desc-heading{
+  font-family: inherit;
+  font-size: 8rem;
+  color: #1e2051;
+  font-weight: 800;
+  margin: 2.4rem 0 2.4rem 0;
+}
+
+.order-desc-subtitle{
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: #6f6f6fae;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 3.2rem;
+}
+
+.order-delivery-man {
+  width: 80%;
+  margin-left: 9.6rem;
 }
