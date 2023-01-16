@@ -65,3 +65,16 @@
   padding: 1rem;
   font-size: 2rem;
 }
+
+.menu-order-btn {
+  padding: 10px 15px;
+
+  background-color: #ffcb00;
+  border: none;
+  font-family: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: .8rem;
+  margin-right: .8rem;
+  border-radius: 5px;
+}
