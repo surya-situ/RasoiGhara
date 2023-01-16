@@ -20,7 +20,8 @@
     <link rel="manifest" href="manifest.webmanifest" />
 
     <!-- ion-icon -->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     <link
       href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
@@ -30,8 +31,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/query.css" />
 
-    <script defer src="index.js" ></script>
-    <!-- <script defer src="item.js"></script> -->
+    <!-- script -->
+    <script  defer src="index.js" ></script>
 
     <title>  &mdash; Good food good life</title>
   </head>
@@ -45,8 +46,8 @@
           <li><a href="index.html" class="main-nav-link">Home</a></li>
           <li><a href="menu.html" class="main-nav-link">Menu</a></li>
           <li><a href="" class="main-nav-link">Meal</a></li>
-          <li><a href="" class="main-nav-link">Pricing</a></li>
-          <li><a href="" class="main-nav-link nav-order">Order Online </a></li>
+          <li><a href="" class="main-nav-link">Contact us</a></li>
+          <li><a href="cart.html" class="main-nav-link nav-order">My cart</a></li>
         </ul>
       </nav>
 
@@ -245,7 +246,9 @@
                 adipisci quo modi numquam.
               </p>
             </div>
-            <button>Add to cart</button>
+
+            <button class="menu-order-btn"> Add to cart</button>
+            <button class="menu-order-btn"> Add favorite</button>
           </div>
 
          <!-- 02 -->
@@ -270,6 +273,9 @@
                 adipisci quo modi numquam.
               </p>
             </div>
+
+            <button class="menu-order-btn"> Add to cart</button>
+            <button class="menu-order-btn"> Add favorite</button>
           </div>
 
          <!-- 03 -->
@@ -294,6 +300,9 @@
                 adipisci quo modi numquam.
               </p>
             </div>
+
+            <button class="menu-order-btn"> Add to cart</button>
+            <button class="menu-order-btn"> Add favorite</button>
           </div>
 
           <!-- 04 -->
@@ -317,6 +326,9 @@
                 adipisci quo modi numquam.
               </p>
             </div>
+
+            <button class="menu-order-btn"> Add to cart</button>
+            <button class="menu-order-btn"> Add favorite</button>
           </div>
 
           <!-- 04 -->
@@ -340,12 +352,16 @@
                 adipisci quo modi numquam.
               </p>
             </div>
+
+            <button class="menu-order-btn"> Add to cart</button>
+            <button class="menu-order-btn"> Add favorite</button>
           </div>
 
           <!-- 04 -->
           <div class="meal">
             <figure class="pop-meal">
               <img
+              class="pop-meal-figure"
               src="imgs/nonveg/thai-fried-rice.jpg"
               alt="Egg Curry"/>
             </figure>
@@ -363,7 +379,11 @@
                 adipisci quo modi numquam.
               </p>
             </div>
+
+            <button class="menu-order-btn"> Add to cart</button>
+            <button class="menu-order-btn"> Add favorite</button>
           </div>
+
         </div>
       </section>
       <!-- POPULAR-DISH-END -->
@@ -443,6 +463,36 @@
           </div>
         </div>
       </section>
+
+      <!-- order section -->
+      <section class="order-offer-section">
+        <div class="order-desc">
+
+          <p class="hero-greeting">*conditions applies!</p>
+
+          <article class="order-desc-heading">
+            Free delivery service.
+          </article>
+
+          <article class="order-desc-subtitle">
+            *Consectetur numquam poro nemo veniam <br>
+            eligendi rem adipisci quo modi.
+          </article>
+
+          <div class="hero-btn">
+            <a href="menu.html" class="btn btn-explore full-menu">
+              <ion-icon class="hero-icon" name="restaurant"></ion-icon>
+              <span>Explore more</span>  
+           </a>
+          </div>
+
+        </div>
+        <div class="order-delivery-img">
+          <img src="imgs/roseighara-deliveryman.png" alt="Our delivery man" class="order-delivery-man">
+        </div>
+      </section>
+
+      <!-- footer -->
 
       <!-- MODAL -->
       <div class="modal hidden">
