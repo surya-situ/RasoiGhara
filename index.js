@@ -1,12 +1,12 @@
 const items = [
     {
         id: '1',
-        title: 'Egg curry',
-        price: 120,
-        img: './imgs/nonveg/egg-curry.jpg',
-        category: 'nonveg',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
-        stars: 5
+        title: 'Masala paneer',
+        price: 150,
+        img: './imgs/veg/paneer-masala.jpg',
+        category: 'veg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
+        stars: 4
     },
     {
         id: '2',
@@ -14,17 +14,17 @@ const items = [
         price: 180,
         img: './imgs/nonveg/butter-chicken.jpg',
         category: 'nonveg',
-        description: 'Finger licking buttery tendered chicken marinated for overnight smoked with apple wood.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 4
     },
     {
         id: '3',
-        title: 'Chicken biryani',
-        price: 220,
-        img: './imgs/nonveg/chicken-biryani.jpg',
-        category: 'nonveg',
-        description: 'Authentic Hydrabadi chicken dum biryani prepared with aromatic spices and delight full flavour',
-        stars: 5
+        title: 'Mix veg fried rice',
+        price: 100,
+        img: './imgs/veg/mix-veg-fried-rice.jpg',
+        category: 'veg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
+        stars: 4.5
     },
     {
         id: '4',
@@ -32,7 +32,7 @@ const items = [
         price: 160,
         img: './imgs/nonveg/chicken-burger.jpg',
         category: 'nonveg',
-        description: `A burger can't leave without a chicken on it. It's chicken burger with 2 patties.`,
+        description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .`,
         stars: 4
     },
     {
@@ -41,7 +41,7 @@ const items = [
         price: 180,
         img: './imgs/nonveg/chicken-fried-rice.jpg',
         category: 'nonveg',
-        description: 'Juicy, tender, perfectly marinated indian fusion chicken fried rice, cooked on low flame.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -50,7 +50,7 @@ const items = [
         price: 120,
         img: './imgs/nonveg/fish-fry.jpg',
         category: 'nonveg',
-        description: 'Crispy tender spicy soft sallow fried fish fry, not only taste good also healthy.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -59,16 +59,16 @@ const items = [
         price: 150,
         img: './imgs/nonveg/dahi-fish.jpg',
         category: 'nonveg',
-        description: 'Delicious authentic spicy soft curd fish, not only taste good also healthy.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
         id: '8',
-        title: 'Thai fried rice',
+        title: 'Egg curry',
         price: 120,
-        img: './imgs/nonveg/thai-fried-rice.jpg',
+        img: './imgs/nonveg/egg-curry.jpg',
         category: 'nonveg',
-        description: 'Authentic Thai spicy fried rice cooked on high flame with pinch of msg and bell paper.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -77,7 +77,7 @@ const items = [
         price: 120,
         img: './imgs/veg/alu-curry.jpg',
         category: 'veg',
-        description: 'Delicious authentic indian spicy potato curry prepared with indian spices.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 4
     },
     {
@@ -86,7 +86,7 @@ const items = [
         price: 120,
         img: './imgs/veg/butter-paneer.jpg',
         category: 'veg',
-        description: 'Delicious authentic indian spicy butter paneer recipe with lots of butter.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 4.5
     },
     {
@@ -95,7 +95,7 @@ const items = [
         price: 120,
         img: './imgs/veg/chili-kobi.jpg',
         category: 'veg',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 4
     },
     {
@@ -104,17 +104,17 @@ const items = [
         price: 60,
         img: './imgs/veg/dahi-bengan.jpg',
         category: 'veg',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 4.5
     },
     {
         id: '13',
-        title: 'Mix veg fried rice',
-        price: 100,
-        img: './imgs/veg/mix-veg-fried-rice.jpg',
-        category: 'veg',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
-        stars: 4.5
+        title: 'Chicken biryani',
+        price: 220,
+        img: './imgs/nonveg/chicken-biryani.jpg',
+        category: 'nonveg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
+        stars: 5
     },
     {
         id: '14',
@@ -122,7 +122,7 @@ const items = [
         price: 140,
         img: './imgs/veg/palag-paneer.jpg',
         category: 'veg',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -131,17 +131,17 @@ const items = [
         price: 170,
         img: './imgs/veg/paneer-hydrabadi.jpg',
         category: 'veg',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
         id: '16',
-        title: 'Masala paneer',
-        price: 150,
-        img: './imgs/veg/paneer-masala.jpg',
-        category: 'veg',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
-        stars: 4
+        title: 'Thai fried rice',
+        price: 120,
+        img: './imgs/nonveg/thai-fried-rice.jpg',
+        category: 'nonveg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
+        stars: 5
     },
     {
         id: '17',
@@ -149,7 +149,7 @@ const items = [
         price: 160,
         img: './imgs/veg/paneer-rice.jpg',
         category: 'veg',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 4
     },
     {
@@ -158,7 +158,7 @@ const items = [
         price: 120,
         img: './imgs/veg/paneer-tandoor.jpg',
         category: 'veg',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -167,7 +167,7 @@ const items = [
         price: 140,
         img: './imgs/veg/vegetable-palau-.jpg',
         category: 'veg',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -176,7 +176,7 @@ const items = [
         price: 100,
         img: './imgs/veg/sukha-alu.jpg',
         category: 'veg',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -185,7 +185,7 @@ const items = [
         price: 80,
         img: './imgs/snacks/brownie-ice-cream.jpg',
         category: 'starter',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -194,7 +194,7 @@ const items = [
         price: 120,
         img: './imgs/snacks/burger-fries.jpg',
         category: 'starter',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -203,7 +203,7 @@ const items = [
         price: 110,
         img: './imgs/nonveg/chicken-burger.jpg',
         category: 'starter',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 4
     },
     {
@@ -212,7 +212,7 @@ const items = [
         price: 120,
         img: './imgs/snacks/chicken-pakoda.jpg',
         category: 'starter',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -221,7 +221,7 @@ const items = [
         price: 70,
         img: './imgs/snacks/veg-momo.jpg',
         category: 'breakfast',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -230,7 +230,7 @@ const items = [
         price: 30,
         img: './imgs/indian-breakfast/bara.jpg',
         category: 'breakfast',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -239,7 +239,7 @@ const items = [
         price: 10,
         img: './imgs/indian-breakfast/chilla.jpg',
         category: 'breakfast',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -248,7 +248,7 @@ const items = [
         price: 40,
         img: './imgs/indian-breakfast/dosa.jpg',
         category: 'breakfast',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -257,7 +257,7 @@ const items = [
         price: 20,
         img: './imgs/indian-breakfast/pakadi.jpg',
         category: 'breakfast',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 5
     },
     {
@@ -266,12 +266,11 @@ const items = [
         price: 20,
         img: './imgs/indian-breakfast/piaji.jpg',
         category: 'breakfast',
-        description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sit corrupti fugit voluptatem .',
         stars: 4
     }
 ];
 
-// selecting the elements for menu btn section
 const menuBtnSelector = document.querySelectorAll('.menu-btn-link')
 // selecting the menu section
 const sectionMenu = document.querySelector('.section-menu');
@@ -281,27 +280,48 @@ window.addEventListener('DOMContentLoaded', ()=> {
     displayMenuitems(items);
 });
 
-// ********** filtering items: **********
-menuBtnSelector.forEach( function(btn) {
-    btn.addEventListener('click', function(e){
+menuBtnSelector.forEach(function (btn) {
+    btn.addEventListener('click', function(event){
         // targeting the id in the menu html button to get the id 
-        const category = e.currentTarget.dataset.id;
+        const category = event .currentTarget.dataset.id;
 
         // filtering the items as per the category
         const menuCategory = items.filter(function(menuItem) {
-            if(menuItem.category === category){
+
+            if(menuItem.category === category) {
                 return menuItem;
             }
         });
 
-        // displaying items
-        if(category === 'all') {
+        if(category === "all") {
             displayMenuitems(items);
         } else {
-            displayMenuitems(menuCategory);
+            displayMenuitems(menuCategory)
         }
-    });
-});
+    })
+})
+
+// ********** filtering items: **********
+// menuBtnSelector.forEach( function(btn) {
+//     btn.addEventListener('click', function(e){
+//         // targeting the id in the menu html button to get the id 
+//         const category = e.currentTarget.dataset.id;
+
+//         // filtering the items as per the category
+//         const menuCategory = items.filter(function(menuItem) {
+//             if(menuItem.category === category){
+//                 return menuItem;
+//             }
+//         });
+
+//         // displaying items
+//         if(category === 'all') {
+//             displayMenuitems(items);
+//         } else {
+//             displayMenuitems(menuCategory);
+//         }
+//     });
+// });
 // ********** filtering items: (ends)**********
 
 // *********** showing all items: **********
@@ -328,12 +348,13 @@ function displayMenuitems (menuitems) {
                     ${item.description}
                 </p>
                 </div>
-                <a href="" class="main-nav-link nav-order">Add to cart</a>
+            <button class="menu-order-btn"> Add to cart</button>
+            <button class="menu-order-btn"> Add to favorite</button>
             </article>
         `
     })
 
-    displayMenu= displayMenu.join('')
+    displayMenu= displayMenu.join('');
 
     sectionMenu.innerHTML = displayMenu;
 };
@@ -366,17 +387,14 @@ const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.close-modal');
 
-let closeModal = () => {
+btnCloseModal.addEventListener('click', () => {
     modal.classList.add('hidden')
     overlay.classList.add('hidden')
-};
+});
 
 setTimeout(() => {
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden')
 }, 3000); 
 
-btnCloseModal.addEventListener('click', closeModal)
 // *************** Modal ends ***************
-
-
