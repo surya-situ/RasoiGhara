@@ -9,11 +9,11 @@
   height: 12rem;
   padding: 0 17rem;
   position: relative;
-  border-bottom: 1px solid #ffcc003a;
+  border-bottom: 2px solid #ffcc003a;
 }
 
 .logo {
-  color: #2a2b43;
+  color: #121569;
   font-size: 3.2rem;
   font-weight: 300;
   font-family: "Rubik", sans-serif;
@@ -30,9 +30,9 @@
   display: flex;
   align-items: center;
   gap: 5.2rem;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 1.6rem;
-  color: #1e2051;
+  color: #121569;
 }
 
 .main-nav-link:link,
@@ -40,7 +40,7 @@
   display: inline-block;
   text-decoration: none;
   /* transition: all 0.3s; */
-  color: #2a2b43;
+  color: #121569;
 }
 
 .main-nav-link:hover,
@@ -53,7 +53,7 @@
 .main-nav-link.nav-order:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 5px;
-  color: #2a2b43;
+  color: #121569;
   font-weight: 500;
   font-size: 1.6rem;
   background-color: #ffcb00;
@@ -518,10 +518,10 @@
   background-color: #ffcb00;
 }
 
-/* --------- */
+/* -----delivery---- */
 .order-offer-section {
-  margin: 4.8rem 0 4.8rem 0;
-  background-color: #fbfafa;
+  margin-top: 4.8rem;
+  background-color: #f8f8f8;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -545,4 +545,63 @@
 .order-delivery-man {
   width: 80%;
   margin-left: 9.6rem;
+}
+
+/* footer */
+.footer-section{
+  background-color: #080924;
+  height: 40rem;
+  color: #ffffff;
+}
+
+.footer-container{
+  padding: 0 17rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  font: inherit;
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: 100;
+  padding: 6rem 17rem 6rem 17rem;
+}
+
+.details-footer-1,
+.details-footer-2,
+.details-footer-3,
+.details-footer-4 {
+  padding-left: 0.8rem;
+}
+
+.footer-heading {
+  font-family: inherit;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.footer-desc {
+  color: #6f6f6f;
+}
+
+.footer-input{
+  font-size: 2rem;
+  padding: 1rem;
+  width: 35rem;
+  border-radius: 1rem ;
+}
+
+.footer-input-div {
+  margin-bottom: 1rem;
+}
+
+.footer-button {
+  background-color: #dcb104;
+  color: #0c0e50;
+  font-size: 2rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.footer-logo {
+  font-size: 3.4rem;
 }
